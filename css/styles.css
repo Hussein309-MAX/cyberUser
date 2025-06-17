@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #eef2f5;
+  }
+  section {
+    margin-bottom: 30px;
+  }
+  h1, h2 {
+    color: #2a2a2a;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  #certificate {
+    background: white;
+    padding: 20px;
+    margin-top: 40px;
+    border: 1px solid #ccc;
+  }
+  

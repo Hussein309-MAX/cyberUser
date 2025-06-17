@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyber Safety Quiz - Test Your Knowledge</title>
+  <link rel="stylesheet" href="css/quiz.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header class="header">
+    <div class="container">
+      <div class="nav-brand">
+        <i class="fas fa-shield-alt"></i>
+        <h1>Cyber Safety Quiz</h1>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">
+          <i class="fas fa-arrow-left"></i>
+          Back to Hub
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <div class="container">
+      
+      <!-- User Information Form -->
+      <div id="user-form" class="form-section">
+        <div class="form-header">
+          <div class="form-icon">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <div class="form-title">
+            <h2>Before We Begin</h2>
+            <p>Please provide your information to get started with the quiz</p>
+          </div>
+        </div>
+        
+        <form class="user-form" id="user-info-form">
+          <div class="form-group">
+            <label for="user-name">
+              <i class="fas fa-user"></i>
+              Full Name
+            </label>
+            <input type="text" id="user-name" placeholder="Enter your full name" required>
+            <div class="form-error" id="name-error"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="user-institution">
+              <i class="fas fa-graduation-cap"></i>
+              Institution
+            </label>
+            <select id="user-institution" required>
+              <option value="">Select your institution type</option>
+              <option value="University">University</option>
+              <option value="College">College</option>
+              <option value="High School">High School</option>
+              <option value="Primary School">Primary School</option>
+              <option value="Training Center">Training Center</option>
+              <option value="Other">Other</option>
+            </select>
+            <div class="form-error" id="institution-error"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="user-age">
+              <i class="fas fa-calendar-alt"></i>
+              Age
+            </label>
+            <input type="number" id="user-age" placeholder="Enter your age" min="10" max="100" required>
+            <div class="form-error" id="age-error"></div>
+          </div>
+          
+          <button type="button" id="start-quiz" class="start-btn">
+            <i class="fas fa-play"></i>
+            Register to Start quiz
+          </button>
+        </form>
+      </div>
+
+      <!-- Quiz Section -->
+      <div id="quiz-section" class="quiz-section" style="display: none;">
+        <div class="quiz-header">
+          <div class="quiz-progress">
+            <div class="progress-bar">
+              <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <div class="progress-text">
+              <span id="current-question">0</span> of <span id="total-questions">0</span> questions
+            </div>
+          </div>
+        </div>
+        
+        <div id="quiz-container" class="quiz-container">
+          <div class="loading-spinner">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Loading quiz questions...</p>
+          </div>
+        </div>
+        
+        <div class="quiz-actions">
+          <button id="prev-question" class="nav-btn" style="display: none;">
+            <i class="fas fa-arrow-left"></i>
+            Previous
+          </button>
+          <button id="next-question" class="nav-btn">
+            Next
+            <i class="fas fa-arrow-right"></i>
+          </button>
+          <button id="submit" class="submit-btn" style="display: none;">
+            <i class="fas fa-check"></i>
+            Submit Quiz
+          </button>
+        </div>
+      </div>
+
+      <!-- Results Preview -->
+      <div id="results-preview" class="results-preview" style="display: none;">
+        <div class="results-header">
+          <i class="fas fa-chart-line"></i>
+          <h3>Quiz Completed!</h3>
+          <p>Calculating your results...</p>
+        </div>
+        <div class="results-spinner">
+          <i class="fas fa-spinner fa-spin"></i>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <i class="fas fa-shield-alt"></i>
+          <span>Cyber Safety Hub</span>
+        </div>
+        <p>&copy; 2025 Cyber Safety Quiz. Test your knowledge and stay secure.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/quiz.js"></script>
+</body>
+</html>
