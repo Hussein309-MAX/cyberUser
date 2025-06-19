@@ -3,15 +3,14 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/fireba
 import { getDatabase } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCv_9O2ZhC9jW2C9L-2vNhOjoMbTQdGi5Y",
-    authDomain: "student-fee-admission-system.firebaseapp.com",
-    databaseURL: "https://student-fee-admission-system-default-rtdb.firebaseio.com",
-    projectId: "student-fee-admission-system",
-    storageBucket: "student-fee-admission-system.firebasestorage.app",
-    messagingSenderId: "1009657295375",
-    appId: "1:1009657295375:web:2ba9d5498165803e52e97a",
-    measurementId: "G-2WV05SNF56"
-  };
+  apiKey: "AIzaSyBbsKHvS4sAAy9gN9--k4qB3U-0sRcQxN0",
+  authDomain: "cybersecurity-awareness-58ea0.firebaseapp.com",
+  projectId: "cybersecurity-awareness-58ea0",
+  storageBucket: "cybersecurity-awareness-58ea0.firebasestorage.app",
+  messagingSenderId: "586812537394",
+  appId: "1:586812537394:web:3a553a9fb430e529e59a2b",
+  measurementId: "G-VTQ7LBY8W5"
+};
 
 const app = initializeApp(firebaseConfig);
 export const db = getDatabase(app);
