@@ -444,3 +444,23 @@ body {
     margin-bottom: 3rem;
   }
 }
+.register-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  margin-left: 10px;
+  background-color: #4CAF50; /* Green color - you can change this */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+.register-btn i {
+  margin-right: 8px;
+}
